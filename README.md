@@ -1,7 +1,7 @@
 <!-- 🟣 Profile Header -->
 <h1 align="center">Hi, I'm Abolfazl Khakbaz 👋</h1>
 <p align="center">
-  <b>Full-Stack Developer • React & Laravel • UI/UX Enthusiast • IT & AI Learner</b>
+  <b>Full-Stack Developer • React & Laravel • IT & AI Learner</b>
 </p>
 
 <!-- 🟢 Profile Views -->
