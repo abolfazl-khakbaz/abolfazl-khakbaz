@@ -1,12 +1,9 @@
 name: GitHub Metrics
 
 on:
-  # هر روز یک بار
   schedule:
     - cron: "0 4 * * *"
-  # اجرای دستی از تب Actions
   workflow_dispatch:
-  # (اختیاری) روی push روی main/master هم ران شود
   push:
     branches:
       - main
@@ -16,18 +13,16 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
 
-    # برای اینکه بتونه github-metrics.svg رو داخل ریپو کامیت کنه
     permissions:
       contents: write
 
     steps:
-      - name: Generate GitHub Metrics
+      - name: Generate GitHub Metrics (Neon style)
         uses: lowlighter/metrics@latest
         with:
-          # PAT که توی Secrets به اسم METRICS_README_TOKEN ذخیره کردی
           token: ${{ secrets.METRICS_README_TOKEN }}
 
-          # 🧾 تنظیمات پایه
+          # 🧾 Base config
           user: abolfazl-khakbaz
           template: classic
           base: header, activity, repositories, metadata
@@ -35,15 +30,56 @@ jobs:
           config_display: large
           filename: github-metrics.svg
 
-          # 🌈 زبان‌ها (با private repos)
+          # 🌈 Neon / Cyberpunk style
+          extras_css: |
+            :root {
+              --ak-neon-bg: #020617;
+              --ak-neon-primary: #00f0ff;
+              --ak-neon-secondary: #22c55e;
+              --ak-neon-pink: #ec4899;
+            }
+            svg {
+              background: radial-gradient(circle at 0% 0%, #0b1120 0, #020617 40%, #000000 100%);
+              border-radius: 18px;
+              box-shadow:
+                0 0 25px rgba(0, 240, 255, 0.35),
+                0 0 60px rgba(34, 197, 94, 0.20);
+            }
+            svg text {
+              font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                           "Segoe UI", Roboto, "JetBrains Mono", monospace;
+            }
+            .header, .header * {
+              fill: var(--ak-neon-primary) !important;
+              color: var(--ak-neon-primary) !important;
+            }
+            a {
+              fill: var(--ak-neon-secondary) !important;
+              color: var(--ak-neon-secondary) !important;
+            }
+            .field, .label, .field > text {
+              fill: #e5e7eb !important;
+              color: #e5e7eb !important;
+            }
+            .strokes, .border, rect[stroke] {
+              stroke: rgba(148, 163, 184, 0.7) !important;
+            }
+
+          config_animations: yes
+
+          # 🌐 Languages (with private repos)
           plugin_languages: yes
+          plugin_languages_sections: most-used, recently-used
           plugin_languages_indepth: yes
           plugin_languages_categories: programming
+          plugin_languages_recent_categories: programming
+          plugin_languages_recent_load: 300
+          plugin_languages_recent_days: 30
           plugin_languages_limit: 12
           plugin_languages_other: yes
           plugin_languages_details: percentage
 
-          # 📆 تقویم کامیت‌ها (ایزومتریک)
+          # 📆 Isometric commit calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
@@ -56,6 +92,6 @@ jobs:
           # 📈 Lines of code
           plugin_lines: yes
 
-          # ریپازیتوری‌هایی که در نظر گرفته می‌شن
+          # Repositories scope
           repositories_affiliations: owner,collaborator
           repositories_forks: yes
