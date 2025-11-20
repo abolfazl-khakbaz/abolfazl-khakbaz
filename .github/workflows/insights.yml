@@ -1,0 +1,73 @@
+name: GitHub Metrics Insights
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate Repo Insights
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_README_TOKEN }}
+
+          # تنظیمات اصلی
+          user: abolfazl-khakbaz
+          template: classic
+          base: ""
+          config_timezone: Europe/Rome
+
+          # 🟦 کارت ۱ — Repo Insights Summary
+          filename: metrics.repo-insights.svg
+          plugin_insights: yes
+          plugin_insights_charts: yes
+          plugin_insights_repositories: yes
+          plugin_insights_languages: yes
+
+      - name: Languages Card
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_README_TOKEN }}
+          user: abolfazl-khakbaz
+          template: classic
+          base: ""
+          filename: metrics.languages.svg
+
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 10
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_categories: programming
+          plugin_languages_threshold: 0
+          
+      - name: Commit Calendar
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_README_TOKEN }}
+          user: abolfazl-khakbaz
+          base: ""
+          filename: metrics.calendar.svg
+
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - name: Achievements Card
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_README_TOKEN }}
+          user: abolfazl-khakbaz
+          base: ""
+          filename: metrics.achievements.svg
+
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+

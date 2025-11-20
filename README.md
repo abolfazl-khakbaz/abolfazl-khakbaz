@@ -61,10 +61,16 @@
 
 ---
 
-## 🧪 Languages (from public + private repos)
+## 🧪 Languages
 
 <p align="center">
-  <img src="/metrics.languages.svg" alt="Languages usage" width="100%" />
+  <img src="./metrics.repo-insights.svg" width="100%" />
+  <br/><br/>
+  <img src="./metrics.languages.svg" width="100%" />
+  <br/><br/>
+  <img src="./metrics.calendar.svg" width="100%" />
+  <br/><br/>
+  <img src="./metrics.achievements.svg" width="100%" />
 </p>
 
 ---
@@ -74,7 +80,7 @@
 ## 📊 Status
 
 <p align="center">
-  <img src="/github-metrics.svg" alt="GitHub Metrics" width="100%" />
+  <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
 </p>
 
 ---
