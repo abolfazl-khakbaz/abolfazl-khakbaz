@@ -19,17 +19,9 @@
 
 ---
 
-## 🚀 About Me
 
-- 🔭 Currently building **front-end heavy apps** with <b>React</b>, <b>Vue</b>, <b>Tailwind</b> & <b>Laravel</b>  
-- 🧠 Exploring **AI, security, automation** and better DX for developers  
-- 🐧 Everyday driver: <b>Linux</b> + terminal + automation  
-- 💬 Ask me about: front-end architecture, DX, dashboards, B2B apps, and DevOps basics  
-- 🎯 Goal: ship clean, performant and maintainable products – not just “working” code  
 
----
-
-## 📊 GitHub Metrics (auto-updated, includes private repos)
+## 📊 Status
 
 <p align="center">
   <!-- این فایل توسط GitHub Actions (lowlighter/metrics) ساخته می‌شود -->
