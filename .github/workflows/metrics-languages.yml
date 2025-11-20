@@ -1,0 +1,68 @@
+name: GitHub Metrics – Languages Focus
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  github-metrics-languages:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate languages card (Neon)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_README_TOKEN }}
+
+          # فقط زبان‌ها، بدون بقیه بخش‌ها
+          user: abolfazl-khakbaz
+          template: classic
+          base: ""             # خیلی مهم: هیچ سکشن دیگری لود نشه
+          filename: metrics.languages.svg
+
+          # 🌐 Languages (با private repos)
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_limit: 12
+          plugin_languages_threshold: 0
+          plugin_languages_other: yes
+
+          # فقط زبان‌های programming، ولی با کنترل بیشتر
+          plugin_languages_categories: programming
+
+          # زبان‌های مزاحم رو می‌تونیم کم‌کم ignore کنیم
+          # (فعلاً خاموش، بعداً با هم تنظیم می‌کنیم)
+          # plugin_languages_ignored: markdown, json, yaml, xml, text
+
+          # ظاهر نئونی
+          extras_css: |
+            :root {
+              --ak-neon-bg: #020617;
+              --ak-neon-primary: #00f0ff;
+              --ak-neon-secondary: #22c55e;
+            }
+            svg {
+              background: radial-gradient(circle at 0% 0%, #0b1120 0, #020617 40%, #000000 100%);
+              border-radius: 18px;
+              box-shadow:
+                0 0 25px rgba(0, 240, 255, 0.35),
+                0 0 60px rgba(34, 197, 94, 0.20);
+            }
+            svg text {
+              font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                           "Segoe UI", Roboto, "JetBrains Mono", monospace;
+            }
+            .header, .header * {
+              fill: var(--ak-neon-primary) !important;
+              color: var(--ak-neon-primary) !important;
+            }
+            .field, .label, .field > text {
+              fill: #e5e7eb !important;
+              color: #e5e7eb !important;
+            }

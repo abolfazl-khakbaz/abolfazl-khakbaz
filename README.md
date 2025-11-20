@@ -17,16 +17,6 @@
   </a>
 </p>
 
----
-
-
-
-## 📊 Status
-
-<p align="center">
-  <!-- این فایل توسط GitHub Actions (lowlighter/metrics) ساخته می‌شود -->
-  <img src="/github-metrics.svg" alt="GitHub Metrics" width="100%" />
-</p>
 
 ---
 
@@ -68,6 +58,24 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+---
+
+## 🧪 Languages (from public + private repos)
+
+<p align="center">
+  <img src="/metrics.languages.svg" alt="Languages usage" width="100%" />
+</p>
+
+---
+
+
+
+## 📊 Status
+
+<p align="center">
+  <img src="/github-metrics.svg" alt="GitHub Metrics" width="100%" />
+</p>
 
 ---
 
