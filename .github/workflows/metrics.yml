@@ -67,7 +67,7 @@ jobs:
 
           config_animations: yes
 
-          # 🌐 Languages (فقط most-used، شامل private repos)
+          # 🌐 Languages (فقط most-used، stable + شامل private)
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_indepth: yes
@@ -75,6 +75,7 @@ jobs:
           plugin_languages_limit: 12
           plugin_languages_other: yes
           plugin_languages_details: percentage
+          plugin_languages_threshold: 0
 
           # 📆 Isometric commit calendar
           plugin_isocalendar: yes
@@ -89,6 +90,6 @@ jobs:
           # 📈 Lines of code
           plugin_lines: yes
 
-          # Repositories scope
+          # Repositories scope (public + private)
           repositories_affiliations: owner,collaborator
           repositories_forks: yes
