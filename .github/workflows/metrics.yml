@@ -1,0 +1,59 @@
+name: GitHub Metrics
+
+on:
+  # هر روز یک‌بار آپدیت
+  schedule:
+    - cron: "0 4 * * *"
+  # امکان اجرا دستی
+  workflow_dispatch:
+  # (اختیاری) وقتی روی main/master push می‌کنی
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # توکنی که ساختی و به نام METRICS_README_TOKEN ذخیره کردی
+          token: ${{ secrets.METRICS_README_TOKEN }}
+
+          # 🧑‍💻 تنظیمات پایه
+          user: abolfazl-khakbaz
+          template: classic
+          base: header, activity, repositories, metadata
+          config_timezone: Europe/Rome
+          config_display: large
+
+          # 🌈 پلاگین زبان‌ها (با private repos)
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: programming
+          plugin_languages_recent: yes
+          plugin_languages_recent_categories: programming
+          plugin_languages_recent_load: 300
+          plugin_languages_recent_days: 30
+          plugin_languages_details: percentage
+          plugin_languages_limit: 12
+          plugin_languages_other: yes
+
+          # 📆 تقویم کامیت‌ها (ایزومتریک)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # 🏅 Achievements
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+
+          # 📈 Lines of code changed
+          plugin_lines: yes
+
+          # 🔍 ریپازیتوری‌های درگیر
+          repositories_affiliations: owner, collaborator
+          repositories_forks: yes

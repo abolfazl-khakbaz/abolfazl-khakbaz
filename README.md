@@ -1,7 +1,8 @@
 <!-- 🟣 Profile Header -->
-<h1 align="center">Hi, I'm Abolfazl Khakbaz 👋</h1>
+<h1 align="center">Hi, I'm <span style="color:#00FFFF;">Abolfazl Khakbaz</span> 👋</h1>
+
 <p align="center">
-  <b>Full-Stack Developer • React & Laravel • IT & AI Learner</b>
+  <b>Full-Stack Developer · React & Laravel · Linux & Automation Lover</b>
 </p>
 
 <!-- 🟢 Profile Views -->
@@ -18,23 +19,34 @@
 
 ---
 
-## 🚀 GitHub Stats
+## 🚀 About Me
+
+- 🔭 Currently building **front-end heavy apps** with <b>React</b>, <b>Vue</b>, <b>Tailwind</b> & <b>Laravel</b>  
+- 🧠 Exploring **AI, security, automation** and better DX for developers  
+- 🐧 Everyday driver: <b>Linux</b> + terminal + automation  
+- 💬 Ask me about: front-end architecture, DX, dashboards, B2B apps, and DevOps basics  
+- 🎯 Goal: ship clean, performant and maintainable products – not just “working” code  
+
+---
+
+## 📊 GitHub Metrics (auto-updated, includes private repos)
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=abolfazl-khakbaz&show_icons=true&theme=radical" height="165" />
+  <!-- این فایل توسط GitHub Actions (lowlighter/metrics) ساخته می‌شود -->
+  <img src="/github-metrics.svg" alt="GitHub Metrics" width="100%" />
+</p>
+
+---
+
+## 🏆 Activity & Achievements
+
+<p align="center">
+  <!-- Streak -->
   <img src="https://streak-stats.demolab.com?user=abolfazl-khakbaz&theme=neon-dark&hide_border=true" height="165" />
 </p>
 
----
-
-## 📦 Top Languages
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abolfazl-khakbaz&layout=compact&theme=radical" />
-</p>
-
----
-
-## 🏆 GitHub Trophies
-<p align="center">
+  <!-- GitHub Trophies -->
   <img src="https://github-profile-trophy.vercel.app/?username=abolfazl-khakbaz&theme=darkhub&no-frame=true&margin-w=8&row=1&column=6" />
 </p>
 
@@ -57,7 +69,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?logo=mysql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
 
-### 🧠 DevOps & Scripting
+### 🧠 DevOps & Tooling
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 ![Shell Script](https://img.shields.io/badge/Shell_Script-121011?logo=gnu-bash&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
@@ -67,13 +79,6 @@
 
 ---
 
-## 📊 Activity Graph
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=abolfazl-khakbaz&theme=react-dark" />
-</p>
-
----
-
-<p align="center">
-  <i>“Code, Create, and Keep Learning.”</i> 🚀
+  <i>“Code, create, and keep learning.”</i> 🚀
 </p>
