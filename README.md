@@ -5,7 +5,7 @@
 <h1 align="center">Hi, I'm <span style="color:#00FFFF;">Abolfazl Khakbaz</span> 👋</h1>
 
 <p align="center">
-  <b>Full-Stack Developer | React & Laravel Engineer | Creative UI/UX & Automation Builder</b>
+  <b>Full-Stack Developer • React & Laravel • IT & AI Learner</b>
 </p>
 
 <p align="center">
@@ -52,7 +52,7 @@
 
 ---
 
-# 🧪 Languages Usage (Public + Private Repositories)
+# 🧪 Languages Usage
 
 <p align="center">
   <img src="./metrics.languages.svg" width="100%" />
@@ -64,10 +64,10 @@
 
 <p align="center">
   <img src="./metrics.repo-insights.svg" width="100%" />
+  <!-- <br/><br/>
+  <img src="https://streak-stats.demolab.com?user=abolfazl-khakbaz&theme=neon-dark&hide_border=true" height="165" /> -->
   <br/><br/>
-  <img src="https://streak-stats.demolab.com?user=abolfazl-khakbaz&theme=neon-dark&hide_border=true" height="165" />
-  <br/><br/>
-  <img src="./metrics.calendar.svg" width="100%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abolfazl-khakbaz&layout=compact&theme=radical" />
 </p>
 
 ---
