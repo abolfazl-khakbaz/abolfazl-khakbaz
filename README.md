@@ -50,13 +50,7 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" />
 </p>
 
----
 
-# 🧪 Languages Usage
-
-<p align="center">
-  <img src="./metrics.languages.svg" width="100%" />
-</p>
 
 ---
 
@@ -76,6 +70,8 @@
 
 <p align="center">
   <img src="./github-metrics.svg" width="100%" />
+  <br/><br/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=abolfazl-khakbaz&theme=react-dark" />
 </p>
 
 ---
