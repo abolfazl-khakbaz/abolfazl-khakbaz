@@ -64,19 +64,17 @@
 
 <p align="center">
   <img src="./metrics.repo-insights.svg" width="100%" />
-  <!-- <br/><br/>
-  <img src="https://streak-stats.demolab.com?user=abolfazl-khakbaz&theme=neon-dark&hide_border=true" height="165" /> -->
+  <br/><br/>
+  <img src="https://streak-stats.demolab.com?user=abolfazl-khakbaz&theme=neon-dark&hide_border=true" height="165" />
   <br/><br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abolfazl-khakbaz&layout=compact&theme=radical" />
 </p>
 
 ---
 
-# 🏆 Achievements & Contributions
+# 📄 Summary
 
 <p align="center">
-  <img src="./metrics.achievements.svg" width="100%" />
-  <br/><br/>
   <img src="./github-metrics.svg" width="100%" />
 </p>
 
