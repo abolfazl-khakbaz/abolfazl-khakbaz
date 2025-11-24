@@ -32,6 +32,8 @@ jobs:
           plugin_languages_limit: 12
           plugin_languages_threshold: 0
           plugin_languages_other: yes
+          plugin_languages_include_private: yes
+
 
           # فقط زبان‌های programming، ولی با کنترل بیشتر
           plugin_languages_categories: programming
