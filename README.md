@@ -14,7 +14,7 @@
 
 <!-- Typing logo -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?center=true&vCenter=true&color=00FFFF&width=650&lines=Full+Stack+Developer;React+%2B+Laravel+Engineer;Creative+Frontend+%26+UI%2FUX+Developer;Linux+%26+Automation+Enthusiast;Always+Learning+AI+%26+Security" />
+  <img src="https://readme-typing-svg.demolab.com?center=true&vCenter=true&color=00FFFF&width=650&lines=Full+Stack+Developer;React+%2B+Laravel+Engineer;Creative+Frontend+Developer;Linux+%26+Automation+Enthusiast;Always+Learning+AI+%26+Security" />
 </p>
 
 ---
