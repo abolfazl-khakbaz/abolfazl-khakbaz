@@ -66,16 +66,6 @@
 
 ---
 
-# 📄 Summary
-
-<p align="center">
-  <img src="./github-metrics.svg" width="100%" />
-  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=abolfazl-khakbaz&theme=react-dark" />
-</p>
-
----
-
 <p align="center">
   <i>“Code, create, break limits — and build something that matters.”</i> 🚀
 </p>
