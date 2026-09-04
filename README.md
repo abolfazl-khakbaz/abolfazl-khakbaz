@@ -82,18 +82,6 @@
 
 ---
 
-# 📊 Repo Insights & Activity
-
-<p align="center">
-  <img src="./metrics.repo-insights.svg" width="100%" />
-  <br/><br/>
-  <img src="https://streak-stats.demolab.com?user=abolfazl-khakbaz&theme=neon-dark&hide_border=true" height="165" />
-  <br/><br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abolfazl-khakbaz&layout=compact&theme=radical" />
-</p>
-
----
-
 <p align="center">
   <i>“Code, create, break limits — and build something that matters.”</i> 🚀
 </p>
