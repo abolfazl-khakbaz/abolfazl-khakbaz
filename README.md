@@ -39,7 +39,6 @@
   <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-14354C?logo=python&logoColor=FFD43B" />
   <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/MS_SQL_Server-CC2927?logo=microsoft-sql-server&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-005C84?logo=mysql&logoColor=white" />
